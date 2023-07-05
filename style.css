@@ -1,0 +1,391 @@
+/* nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    float: right;
+}
+
+nav ul {
+    width: 40%;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 330px;
+    float: right;
+    margin-left: 100px;
+    padding-top: 50px;
+   padding-right: 200px;
+
+} */
+
+/* .srch{
+    background-color: rgba(230, 83, 80, 0.72);
+    font-family: 'Times New Roman';
+    background: transparent;
+    border-right: none;
+    font-size: 15px;
+    
+} */
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    width: 80%;
+    height: 95vh;
+    border: 1px solid black;
+    margin: auto;
+}
+
+header nav {
+    width: 100%;
+    height: 7%;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    padding: 3px 15px;
+}
+header nav ul li:nth-last-child(1){
+    background: black;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+header nav ul li:nth-last-child(1) a{
+    color: white;
+}
+header nav ul li{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    transition: .3s linear;
+}
+header nav ul li a:hover{
+    color: gray;
+}
+header .content {
+    position: relative;
+    width: 100%;
+    height: 93%;
+    border: 1px solid black;
+}
+header .content::before{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    border: 1px solid black;
+    background: url("images/backgrround1\ .jpg")no-repeat center center/cover;
+    border: 10px;
+    z-index: -1;
+}
+
+header .content .cont_bx{
+    width: 500;
+    height: auto;
+    color: black
+    padding: 30px;
+}
+
+header .content .cont_bx h1{
+    line-height: 40px;
+    font-weight: 800;
+}
+header .content .cont_bx p{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+header .content .cont_bx button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+}
+header .content .cont_bx button:hover{
+    background: greenyellow;
+    border: 2px solid greenyellow;
+}
+
+header .trip_bx{
+   position: relative;
+   width: 95%;
+   height: auto;
+   margin: auto;
+   border: 1px solid black; 
+}
+header .trip_bx .search_bx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60;
+    height: 68;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: 5px;
+    box-shadow: 0px 10px 25px white;
+    z-index: 1;
+    padding: 10px 20px;
+ }
+
+ header .trip_bx .search_bx .card{
+    width: 200px;
+    height: 100%;
+    border: 1px solid black;
+ }
+ header .trip_bx .search_bx .card h4{
+    font-size: 15px;
+    margin: 0;
+    font-weight: 700;
+ }
+ header .trip_bx .search_bx .card h4 bi{
+    position: absolute;
+    font-size: 13px;
+    margin: 2px opx 5px;
+    transition: .3s linears;
+ }
+ header .trip_bx .search_bx .card input{
+    margin: 3px;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+ }
+ header .trip_bx .search_bx input[type="button"]{
+    background: black;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .3s linear;
+    cursor: pointer;
+ }
+ header .trip_bx .search_bx input[type="button"]:hover{
+    background: grey;
+    
+ }
+
+ header .trip_bx .services_bx{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    top: 40px;
+    background: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0px 20px 25px --10px grey;
+ }
+
+ header .trip_bx .services_bx::before{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: black;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+ }
+ header .trip_bx .services_bx h4{
+    margin: 0;
+    padding: 60px 0px 15px 2.5px;
+    color: white;
+ }
+ header .trip_bx .services_bx .cards{
+    width: 95%;
+    height: auto;
+    margin: o auto;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ header .trip_bx .services_bx .cards .card{
+    width: 220px;
+    height: 180px;
+    border: 1px solid white;
+ }
+ header .trip_bx .services_bx .cards .card h3{
+    margin: 0px 0px 10px 8px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+ }
+ header .trip_bx .services_bx .cards .card h3 image{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+ }
+
+
+ .offers{
+    width: 60%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 100px;
+ }
+ 
+ .offers h1{
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+ }
+ .offers p{
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+ }
+ .offers .cards{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+ }
+.offers .cards .card {
+    position: relative;
+    width: 200px;
+    height: 350;
+    /* border: 1px solid black; */
+    margin: 10px;
+}
+
+.destination{
+    width: 45%;
+    height: auto;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination .des_bx , .img_bx{
+    position: relative;
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.destination .des_bx h4 {
+    margin: 0;
+    font-size: 20PX;
+    color: black;
+    line-height: 10px;
+    letter-spacing: 1px;
+}
+.destination .des_bx h4 p{
+    font-size: 120px;
+}
+.destination .des_bx li{
+    list-style-type: none;
+    padding: 0px 0px 8px 0px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.destination .des_bx h6{
+    width: 250px;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+.destination .des_bx button{
+    font-size: 12px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.destination .des_bx button:hover{
+    background: grey;
+    border: 2px solid grey;
+}
+
+.destination .img_bx image{
+    width: 100%;
+    height: 420px;
+    border-radius: 5px;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background: yellowgreen;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footer h2{
+    text-align: center;
+    margin: 0;
+    margin-top: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+footer p{
+    text-align: center;
+    width: 400px;
+    font-size: 13px;
+}
+
+footer .input{
+    box-shadow: 0px 3px 20px -1px grey;
+    border-radius: 20px;
+}
+footer .input input{
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 0px 20px 20px 0px;
+    /* background: black; */
+}
+footer .input button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 0px 20px 20px 0px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: .3s linear;
+}
+footer .input button:hover{
+    background: grey;
+}
