@@ -39,7 +39,7 @@ function UpdateBusesTickets(Buses) {
 Fetch_all_Buses();
 
 function display_all_Buses(Buses){
-movies.forEach(bus => {
+Buses.forEach(bus => {
     const li=document.createElement("li")
     li.textContent=bus.title
     li.id=bus.id
@@ -55,7 +55,7 @@ function display_one_bus_details(e){
    }
 
    function fetchBusesById(id){
-    fetch(`http://localhost:3000/Buses/films/${id}`)
+    fetch(`http://localhost:3000/Buses/${id}`)
     .then(Response => Response.json())
     .then(bus => {
         display_all_Buses(bus)
@@ -68,7 +68,6 @@ function display_one_bus_details(e){
     const busDetailsElement=document.querySelector("#bus-details")
     const title=busDetailsElement.querySelector("#title")
     const image=busDetailsElement.querySelector("#image")
-    // const descr=animalDetailsElement.querySelector("#descr")
     
     //id.textContent=data.title
     title.textContent=bus.title 
@@ -96,10 +95,8 @@ function display_one_bus_details(e){
         }
 
         Buy_tickets.addEventListener("click", handleBuyTicket)
-        //id.textContent=data.title
         Run_time.textContent=bus.runtime 
         Show_time.textContent=bus.showtime 
-        //Available_tickets.textContent=movie.title 
         Available_tickets.textContent=bus.capacity-bus.tickets_sold
 
     
@@ -114,9 +111,9 @@ function display_one_bus_details(e){
 
 async function handleBuyTicket(e) {
     e.preventDefault()
-    loadedbuses.tickets_sold += 1
+    loadedBuses+= 1
     const updatedBus = await updatebusTickets(loadedbuses)
-    display_available_buses(updatedBus)
+    display_all_Buses(updatedBus)
 }
 
 
