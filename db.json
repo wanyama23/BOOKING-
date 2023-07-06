@@ -1,17 +1,101 @@
 {
-    "toys": [
+    "Bus": [
       {
-        "id": 1,
-        "name": "Woody",
-        "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-        "likes": 8
+        "id": "1",
+        "title": "BUS 1",
+        "capacity": 46,
+        "Departure time": "2:30PM",
+        "tickets_sold": 25,
+        "poster": "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/2326x800-volvo-9700-CGI?qlt=82&wid=1440&ts=1656563752972&dpr=off&fit=constrain"
       },
       {
-        "id": 2,
-        "name": "Buzz Lightyear",
-        "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-        "likes": 14
+        "id": "2",
+        "title": "BUS 2",
+        "capacity": 35,
+        "Departure time": "9:30PM",
+        "tickets_sold": 20,
+        "poster": "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/BS%20VI%20Bus%20Single%20Axcel_Single%20Bus?wid=1024"
+      },
+      {
+        "id": "3",
+        "title": "BUS 3",
+        "capacity": 39,
+        "Departure time": "9:30AM",
+        "tickets_sold": 19,
+        "poster": "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/1000x1000_bus_9900_couch?qlt=82&wid=1024&ts=1612274150140&dpr=off&fit=constrain"
+      },
+      {
+        "id": "4",
+        "title": "BUS 4",
+        "capacity": 46,
+        "Departure time": "1:30PM",
+        "tickets_sold": 35,
+        "poster": "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/maroon-bus?qlt=82&wid=1024&ts=1660222495591&dpr=off&fit=constrain"
+      },
+      {
+        "id": "5",
+        "title": "BUS 5",
+        "capacity": 42,
+        "Departure time": "3:30PM",
+        "tickets_sold": 25,
+        "poster": "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/9900_Uddevalla%20bridge_landscape_6246_2019?qlt=82&wid=1024&ts=1613624884191&dpr=off&fit=constrain"
+      },
+      {
+        "id": "6",
+        "title": "BUS 6",
+        "capacity": 32,
+        "Departure time": "10:30PM",
+        "tickets_sold": 25,
+        "poster": "https://english.cdn.zeenews.com/sites/default/files/2023/01/21/1144195-volvo-9600-bus.jpg"
+      },
+      {
+        "id": "7",
+        "title": "BUS 7",
+        "capacity": 28,
+        "Departure time": "7:00AM",
+        "tickets_sold": 25,
+        "poster": "https://img.theweek.in/content/dam/week/news/biz-tech/images/2020/8/13/volvo-bus.jpg"
+      },
+      {
+        "id": "8",
+        "title": "BUS 8",
+        "capacity": 42,
+        "Departure time": "4:00PM",
+        "tickets_sold": 25,
+        "poster": "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/1860x1050-Volvo-9700DD-front45?size=1280,720&scl=1"
+      },
+      {
+        "id": "9",
+        "title": "BUS 9",
+        "capacity": 35,
+        "Departure time": "7:30PM",
+        "tickets_sold": 16,
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNvGijduqIGx2-lXLeJ82EqfdacjpYbmgkzYQXkfAmxJgLmEhE71BHB5cJ8Ec8tvg3Ch0&usqp=CAU"
+      },
+      {
+        "id": "10",
+        "title": "BUS 10",
+        "capacity": 46,
+        "Departure time": "5:00PM",
+        "tickets_sold": 25,
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3_UZlhsnjVTWXy5m_Fbo5Z2k4NOas47FsenvdUAaCOIpP33gO5sYkJTcztTeN6UCVsw&usqp=CAU"
+      },
+      {
+        "id": "11",
+        "title": "BUS 11",
+        "capacity": 38,
+        "Departure time": "2:30PM",
+        "tickets_sold": 19,
+        "poster": "https://www.nexotrans.com/fotos/1/2_58625867_377084516231165_1601034490778484736_n_thumb_690.jpg"
+      },
+      {
+        "id": "12",
+        "title": "BUS 12",
+        "capacity": 37,
+        "Departure time": "11:00PM",
+        "tickets_sold": 25,
+        "poster": "https://www.lectura-specs.com/models/renamed/orig/touring-motor-choaches-9900-124-volvo-buses.jpg"
       }
+      
     ]
   }
-  
