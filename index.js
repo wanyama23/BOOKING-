@@ -23,7 +23,7 @@ function Fetch_all_Buses() {
         })
 }
 
-function updatebusTickets(Buses) {
+function UpdateBusesTickets(Buses) {
     return fetch(`http://localhost:3000/Buses/${Buses.id}`, {
         method: "PATCH",
         headers: {
@@ -36,7 +36,7 @@ function updatebusTickets(Buses) {
         
 }
 
-Fetch_all_buses();
+Fetch_all_Buses();
 
 function display_all_Buses(Buses){
 movies.forEach(bus => {
