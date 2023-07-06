@@ -1,14 +1,14 @@
-// Array.from(document.getElementsByName(input)).forEach((e,i)=>{
-//     e.addEventListener('keyup', (el)=>{
-//         if(e.value.length > 0) {
-//             document.getElementsByClassName('bi')[i].style.transform= "rotate(180deg)";
+Array.from(document.getElementsByName(input)).forEach((e,i)=>{
+    e.addEventListener('keyup', (el)=>{
+        if(e.value.length > 0) {
+            document.getElementsByClassName('bi')[i].style.transform= "rotate(180deg)";
 
-//         } else
-//         document.getElementsByClassName('bi')[i].style.transform= "rotate(0deg)";
-//     })
-// })
+        } else
+        document.getElementsByClassName('bi')[i].style.transform= "rotate(0deg)";
+    })
+})
 
-// let menu_bx = document.getElementById('menu_bx');
+let menu_bx = document.getElementById('menu_bx');
 
 
 const Buses_node = document.querySelector("#Buses")
@@ -107,10 +107,10 @@ function display_one_bus_details(e){
 
 
 
-function already_sold_tickets(bus){
-return bus.capacity===bus.tickets_sold
+// function already_sold_tickets(bus){
+// return bus.capacity===bus.tickets_sold
 
-}
+// }
 
 async function handleBuyTicket(e) {
     e.preventDefault()
@@ -118,3 +118,9 @@ async function handleBuyTicket(e) {
     const updatedBus = await updatebusTickets(loadedbuses)
     display_available_buses(updatedBus)
 }
+
+
+function already_sold_tickets(bus){
+    return bus.capacity===bus.tickets_sold
+    
+    }
