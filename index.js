@@ -16,7 +16,7 @@ const Buses_node = document.querySelector("#Buses")
 let loadedBuses = {}
 
 function Fetch_all_Buses() {
-    fetch("http://localhost:3000/Buses")
+    fetch("https://service-t2zq.onrender.com/")
         .then(Response => Response.json())
         .then(Buses => {
             display_all_Buses(Buses)
@@ -24,7 +24,7 @@ function Fetch_all_Buses() {
 }
 
 function UpdateBusesTickets(Buses) {
-    return fetch(`http://localhost:3000/Buses/${Buses.id}`, {
+    return fetch(`https://service-t2zq.onrender.com//${Buses.id}`, {
         method: "PATCH",
         headers: {
             "Content-type": "Application/json"
@@ -55,7 +55,7 @@ function display_one_bus_details(e){
    }
 
    function fetchBusesById(id){
-    fetch(`http://localhost:3000/Buses/${id}`)
+    fetch(`https://service-t2zq.onrender.com/${id}`)
     .then(Response => Response.json())
     .then(bus => {
         display_all_Buses(bus)
